@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação Numérica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Validação Numérica</h1>
+        
+        <div class="form-info">
+            <strong>Regra:</strong> O Campo B deve ser maior que o Campo A para que o formulário seja válido.
+        </div>
+
+        <form id="formularioValidacao">
+            <div class="form-group">
+                <label for="campoA">Campo A:</label>
+                <input type="number" id="campoA" name="campoA" step="any" placeholder="Digite o valor do Campo A" required>
+            </div>
+
+            <div class="form-group">
+                <label for="campoB">Campo B:</label>
+                <input type="number" id="campoB" name="campoB" step="any" placeholder="Digite o valor do Campo B" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Validar Formulário</button>
+        </form>
+
+        <div id="mensagem" class="message"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
